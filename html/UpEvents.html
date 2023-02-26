@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Upcoming</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="/Recursos Amazing Events/Logo Amazing Events.png" alt="logo" width="120"></a>
+          <button class="btn-nav navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="UpEvents.html">Upcoming Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pastEvents.html">Past Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="stats.html">Stats</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <header class=" row header text-center">
+            <h1>Upcoming Events</h1>
+    </header>
+    <main class="container">
+            <div class="form_article">
+                <button class="form-toggler btn  btn-form" type="button" data-bs-toggle="collapse" data-bs-target="#formSupportedContent" aria-controls="formSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    Filter
+                  </button>
+                <form class="form-control collapse" action="get" id="formSupportedContent">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Books" name="checkbooks" id="checkbooks">
+                        <label class="form-check-label" for="checkbooks">
+                          Books
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Cinema" name="checkcinema" id="checkcinema">
+                        <label class="form-check-label" for="checkcinema">
+                          Cinema
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Music Concerts" name="checkmusic" id="checkmusic">
+                        <label class="form-check-label" for="checkmusic">
+                            Music Concerts
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Food Fair" name="checkfood" id="checkfood">
+                        <label class="form-check-label" for="checkfood">
+                          Food Fair
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Costume Party" name="checkparty" id="checkparty">
+                        <label class="form-check-label" for="checkparty">
+                          Costume Party
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Marathon" name="checkmarathon" id="checkmarathon">
+                        <label class="form-check-label" for="checkmarathon">
+                          Marathon
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Museum" name="checkmuseum" id="checkmuseum">
+                        <label class="form-check-label" for="checkmuseum">
+                          Museum
+                        </label>
+                      </div>
+                       <div class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                       </div> 
+                </form>
+            </div>
+
+            <div class="form-expand container">
+              <form class="form-control" action="get" >
+                    <div >
+                       
+                    <div class="row">
+
+                      <div class="col-4 col-md-2">
+                        <input class="form-check-input" type="checkbox" value="Books" name="checkbooks" id="checkbooks">
+                    <label class="form-check-label" for="checkbooks">
+                      Books
+                    </label>
+                      </div>
+
+                      <div class="col-3 col-md-2">
+                        <input class="form-check-input" type="checkbox" value="Cinema" name="checkcinema" id="checkcinema">
+                    <label class="form-check-label" for="checkcinema">
+                      Cinema
+                    </label>
+                      </div>
+
+                      <div class="col-5 col-md-3">
+                        <input class="form-check-input" type="checkbox" value="Music Concerts" name="checkmusic" id="checkmusic">
+                        <label class="form-check-label" for="checkmusic">
+                            Music Concerts
+                        </label>
+                      </div>
+
+                      <div class="col-4 col-md-2">
+                        <input class="form-check-input" type="checkbox" value="Food Fair" name="checkfood" id="checkfood">
+                    <label class="form-check-label" for="checkfood">
+                      Food Fair
+                    </label>
+                      </div>
+
+                      <div class="col-5 col-md-3">
+                        <input class="form-check-input" type="checkbox" value="Costume Party" name="checkparty" id="checkparty">
+                    <label class="form-check-label" for="checkparty">
+                      Costume Party
+                    </label>
+                      </div>
+
+                      <div class="col-4">
+                        <input class="form-check-input" type="checkbox" value="Marathon" name="checkmarathon" id="checkmarathon">
+                    <label class="form-check-label" for="checkmarathon">
+                      Marathon
+                    </label>
+                      </div>
+                      
+                      <div class="col-3">
+                        <input class="form-check-input" type="checkbox" value="Museum" name="checkmuseum" id="checkmuseum">
+                        <label class="form-check-label" for="checkmuseum">
+                          Museum
+                        </label>
+                      </div>
+                   </div>  
+                    </div>
+                    
+                  
+                   <div class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                   </div> 
+            </form>
+            </div>
+
+          <div class="carousel-cards">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+
+                      <div class="carousel-item active">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Recursos Amazing Events/books.jpg" class="card-img-top" alt="books">
+                            <div class="card-body">
+                              <h5 class="card-title">Books</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <div class="card-btn">
+                                <span>Price $100</span>
+                                <a href="#" class="btn">See More</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Recursos Amazing Events/Cine7.jpg" class="card-img-top" alt="cine" height="190">
+                            <div class="card-body">
+                              <h5 class="card-title">Cinema</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <div class="card-btn">
+                                <span>Price $100</span>
+                                <a href="#" class="btn">See More</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Recursos Amazing Events/Concierto de musica1.jpg" class="card-img-top" alt="musica" height="190">
+                            <div class="card-body">
+                              <h5 class="card-title">Music Concerts</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <div class="card-btn">
+                                <span>Price $100</span>
+                                <a href="#" class="btn">See More</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+   
+                      <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Recursos Amazing Events/Feria de comidas7.jpg" class="card-img-top" alt="comida" height="190">
+                            <div class="card-body">
+                              <h5 class="card-title">Food Fair</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <div class="card-btn">
+                                <span>Price $100</span>
+                                <a href="#" class="btn">See More</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Recursos Amazing Events/Fiesta de disfraces1.jpg" class="card-img-top" alt="disfraces" height="190">
+                            <div class="card-body">
+                              <h5 class="card-title">Costume Party</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <div class="card-btn">
+                                <span>Price $100</span>
+                                <a href="#" class="btn">See More</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Recursos Amazing Events/Maraton3.jpg" class="card-img-top" alt="marathon">
+                            <div class="card-body">
+                              <h5 class="card-title">Marathon</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <div class="card-btn">
+                                <span>Price $100</span>
+                                <a href="#" class="btn">See More</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Recursos Amazing Events/Salida al museo5.jpg" class="card-img-top" alt="museum">
+                            <div class="card-body">
+                              <h5 class="card-title">Museum</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <div class="card-btn">
+                                <span>Price $100</span>
+                                <a href="#" class="btn">See More</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="cards-expand">
+              <div class="row">
+
+                <div class="col col-card">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/Recursos Amazing Events/books.jpg" class="card-img-top" alt="books">
+                    <div class="card-body">
+                      <h5 class="card-title">Books</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="card-btn">
+                        <span>Price $100</span>
+                        <a href="#" class="btn btn-secondary">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col-card">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/Recursos Amazing Events/Cine7.jpg" class="card-img-top" alt="cine" height="190">
+                    <div class="card-body">
+                      <h5 class="card-title">Cinema</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="card-btn">
+                        <span>Price $100</span>
+                        <a href="#" class="btn btn-secondary">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col-card">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/Recursos Amazing Events/Concierto de musica1.jpg" class="card-img-top" alt="musica" height="190">
+                    <div class="card-body">
+                      <h5 class="card-title">Music Concerts</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="card-btn">
+                        <span>Price $100</span>
+                        <a href="#" class="btn btn-secondary">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col-card">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/Recursos Amazing Events/Feria de comidas7.jpg" class="card-img-top" alt="comida" height="190">
+                    <div class="card-body">
+                      <h5 class="card-title">Food Fair</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="card-btn">
+                        <span>Price $100</span>
+                        <a href="#" class="btn btn-secondary">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col-card">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/Recursos Amazing Events/Fiesta de disfraces1.jpg" class="card-img-top" alt="disfraces" height="190">
+                    <div class="card-body">
+                      <h5 class="card-title">Costume Party</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="card-btn">
+                        <span>Price $100</span>
+                        <a href="#" class="btn btn-secondary">See More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col col-card">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/Recursos Amazing Events/Maraton3.jpg" class="card-img-top" alt="marathon">
+                    <div class="card-body">
+                      <h5 class="card-title">Marathon</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="card-btn">
+                        <span>Price $100</span>
+                        <a href="#" class="btn btn-secondary">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col-card">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/Recursos Amazing Events/Salida al museo5.jpg" class="card-img-top" alt="museum">
+                    <div class="card-body">
+                      <h5 class="card-title">Museum</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="card-btn">
+                        <span>Price $100</span>
+                        <a href="#" class="btn btn-secondary">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </main>
+
+    <footer class="container-fluid">
+      <div class="redes"> 
+         <a href="#"><img src="/Recursos Amazing Events/facebook.png" alt="logo-facebook" width="30"></a>
+         <a href="#"><img src="/Recursos Amazing Events/instagram.png" alt="logo-instagram" width="30"></a>
+         <a href="#"><img src="/Recursos Amazing Events/whatsapp.png" alt="logo-whatsapp" width="30"></a>
+      </div>
+      <div class="text">
+        Todos los derechos Reservados 2023 - Agustin Oliva 
+      </div>
+      <div class="text-dos">
+        Cohort
+      </div>
+    </footer>
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

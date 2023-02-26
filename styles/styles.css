@@ -1,0 +1,159 @@
+/* Estilos Generales */
+
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    background-color: #737070;
+    text-align: center;
+}
+.redes a{
+    margin: 0 6px;
+}
+.redes{
+    text-align: center;
+}
+.text{
+    font-size: 13px;
+}
+.text-dos{
+    text-align: center;
+    font-size: 13px;
+}
+
+.btn{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d63384;
+    --bs-btn-border-color: #d63384;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d63384;
+    --bs-btn-hover-border-color: #d63384;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #d63384;
+    --bs-btn-active-border-color: #d63384;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #d63384;
+    --bs-btn-disabled-border-color: #d63384;
+}
+ /* Estilos para el navbar */
+  .navbar{ 
+    background-color: #737070 !important;
+  }
+  .nav-item a{
+    color: #fff;
+  }
+  .nav-item .active{
+    color: #fff !important;
+  }
+ 
+/* Estilos para el carousel de cards de eventos */
+
+.carousel-cards{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.carousel-item active{
+    height: 390px;
+}
+
+.card-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.card-btn span{
+    align-self: center;
+}
+
+.cards-expand{
+    display: none;
+}
+
+/* Estilos para el form de busqueda  */
+
+.form-expand{
+    display: none;
+}
+.btn-outline-success {
+    --bs-btn-color: #d63384;
+    --bs-btn-border-color: #d63384;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d63384;
+    --bs-btn-hover-border-color: #d63384;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #d63384;
+    --bs-btn-active-border-color: #d63384;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #d63384;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #d63384;
+    --bs-gradient: none;
+}
+.form-check-input:checked{
+background-color: #e668a7;
+border-color: #fff;
+}
+/* Media query para celular Grande */
+
+@media (min-width:480px){
+    .form_article{
+        display: none;
+    }
+    .form-expand{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+/* Media query para tablet*/
+
+@Media (max-width:768px){
+    .nav-item:hover{
+        background-color: #e668a7; 
+     }
+    
+     .nav-item a:hover{
+        margin-left: 10px;
+        transition: 1s all;
+     }
+
+}
+/* Media query para tablet Med*/
+
+@Media (min-width:768px){
+    .nav-item:hover{
+        border-bottom: 2px solid #e668a7; 
+     }
+    
+     .nav-item a:hover{
+        margin-left: 10px;
+        transition: 1s all;
+     }
+}
+ 
+/* Media query para tablet grande*/
+
+@media (min-width:992px){
+    .carousel-cards{
+        display: none;
+    }
+    .cards-expand{
+        display: flex;
+    }
+    footer{
+        position: static;
+    }
+    .col-card{
+        margin: 10px 0;
+    }
+}
