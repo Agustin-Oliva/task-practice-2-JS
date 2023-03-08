@@ -56,6 +56,21 @@ footer{
     --bs-btn-disabled-bg: #d63384;
     --bs-btn-disabled-border-color: #d63384;
 }
+
+.card-img-top{
+    height: 190px;
+}
+.card{
+    height: 382px;
+}
+.card-body{
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.carousel-home{
+    display: none !important;
+}
  /* Estilos para el navbar */
   .navbar{ 
     background-color: #737070 !important;
@@ -65,6 +80,56 @@ footer{
   }
   .nav-item .active{
     color: #fff !important;
+  }
+
+  /* Estilos para el Home */
+  .about-us{
+    font-size: 1.4em;
+  }
+  .about-sect h2{
+    color: #d63384;
+  }
+  .about-sect{
+    text-align: center;
+  }
+  .span-color{
+    color: #d63384;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .spans-about{
+    height: 100px;
+    
+  }
+  .spans-about span{
+   
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(15) 1s 1 normal both, blink 1s steps(1) infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .span-edit-one{
+    position: absolute;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e668a7;
+    left: 10px;
+    bottom: 240px;
+  }
+  .span-edit-two{
+    position: absolute;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #d63384;
+    left: 30px;
+    bottom: 200px;
   }
 /* Estilos para el carousel de cards de eventos */
 
@@ -172,7 +237,15 @@ form{
     list-style: none;
  }
 
+ @media (min-width:320px){
+    .div-data{
+        max-width: 340px;
+    }
+   
+}
+
 /* Media query para celular Grande */
+
 
 @media (min-width:480px){
     .form_article{
@@ -182,27 +255,8 @@ form{
         display: block;
         margin: 0 auto;
     }
-    
+   
 }
-@media (min-width:320px){
-    .div-data{
-        max-width: 340px;
-    }
-}
-/* Media query para tablet*/
-
-@Media (max-width:768px){
-    .nav-item:hover{
-        background-color: #e668a7; 
-     }
-    
-     .nav-item a:hover{
-        margin-left: 10px;
-        transition: 1s all;
-     }
-
-}
-
 /* Media query para tablet Med*/
 @media (min-width:600px){
     .div-data{
@@ -224,7 +278,36 @@ form{
      .div-text {
         text-align: center;
      }
+     .span-edit-one{
+        left: 10px;
+        bottom: 440px;
+      }
+      .span-edit-two{
+        left: 30px;
+        bottom: 390px;
+      }
+      .carousel-home{
+        display: flex !important;
+      }
+      .footer-home{
+        position: relative;
+      }
 }
+/* Media query para tablet*/
+
+@Media (max-width:768px){
+    .nav-item:hover{
+        background-color: #e668a7; 
+     }
+    
+     .nav-item a:hover{
+        margin-left: 10px;
+        transition: 1s all;
+     }
+
+}
+
+
 
 @Media (min-width:768px){
     .nav-item:hover{
@@ -235,6 +318,8 @@ form{
         margin-left: 10px;
         transition: 1s all;
      }
+    
+    
 }
  
 /* Media query para tablet grande*/
@@ -256,7 +341,21 @@ form{
         width: 700px;
         margin: 0 auto;
     }
-    
+
+    .row-center{
+        margin: 20px auto;
+    }
+    .carousel-home{
+        display:none !important ;
+    }
+    .span-edit-one{
+        left: 10px;
+        bottom: 500px;
+      }
+      .span-edit-two{
+        left: 30px;
+        bottom: 460px;
+      }
 }
 @media (max-width:992px){
     .div-img {
@@ -268,4 +367,7 @@ form{
     .div-img img{
         height: 100%;
     }
+ 
+
 }
+
