@@ -8,11 +8,10 @@ body{
 .logo{
     width: 150px;
 }
-footer{
-    display: flex;
+.footer-gral{
+    position: fixed;
+    bottom: 0 ;
     flex-direction: column;
-    position: absolute;
-    bottom: 0;
     background-color: #737070;
     text-align: center;
 }
@@ -71,6 +70,9 @@ footer{
 .carousel-home{
     display: none !important;
 }
+.form-index{
+    display: none;
+}
  /* Estilos para el navbar */
   .navbar{ 
     background-color: #737070 !important;
@@ -97,40 +99,12 @@ footer{
     font-size: 1.3em;
     font-weight: bold;
   }
-  .spans-about{
-    height: 100px;
-    
-  }
-  .spans-about span{
-   
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 3s steps(15) 1s 1 normal both, blink 1s steps(1) infinite;
-  }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  .span-edit-one{
-    position: absolute;
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #e668a7;
-    left: 10px;
-    bottom: 240px;
-  }
-  .span-edit-two{
-    position: absolute;
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #d63384;
-    left: 30px;
-    bottom: 200px;
-  }
+.btn-form-past{
+    margin-top: 10px;
+}
+ .btn-form-up{
+    margin-top: 10px;
+}
 /* Estilos para el carousel de cards de eventos */
 
 .carousel-cards{
@@ -238,6 +212,9 @@ form{
  }
 
  @media (min-width:320px){
+    .btn-display{
+      display: block;
+    }
     .div-data{
         max-width: 340px;
     }
@@ -252,9 +229,12 @@ form{
         display: none;
     }
     .form-expand{
-        display: block;
+        display: none;
         margin: 0 auto;
     }
+    .form-expand-index{
+        display: none;
+      }
    
 }
 /* Media query para tablet Med*/
@@ -278,19 +258,13 @@ form{
      .div-text {
         text-align: center;
      }
-     .span-edit-one{
-        left: 10px;
-        bottom: 440px;
-      }
-      .span-edit-two{
-        left: 30px;
-        bottom: 390px;
-      }
+     
       .carousel-home{
         display: flex !important;
       }
-      .footer-home{
-        position: relative;
+      .form-index{
+        display: block;
+        margin-top: 10px;
       }
 }
 /* Media query para tablet*/
@@ -325,15 +299,22 @@ form{
 /* Media query para tablet grande*/
 
 @media (min-width:992px){
+    .btn-form-past{
+        display: none;
+    }
+    .btn-form-up{
+        display: none;
+    }
+    .form-article-past{
+      display: none;
+    }
     .carousel-cards{
         display: none;
     }
     .cards-expand{
         display: flex;
     }
-    footer{
-        position: static;
-    }
+    
     .col-card{
         margin: 10px 0;
     }
@@ -348,14 +329,17 @@ form{
     .carousel-home{
         display:none !important ;
     }
-    .span-edit-one{
-        left: 10px;
-        bottom: 500px;
+      .form-expand-index{
+        display: flex;
+        margin-top: 10px;
       }
-      .span-edit-two{
-        left: 30px;
-        bottom: 460px;
+      .form-index{
+        display: none;
       }
+      .form-expand{
+        display: flex;
+        margin: 0 auto;
+    }
 }
 @media (max-width:992px){
     .div-img {

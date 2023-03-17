@@ -37,126 +37,27 @@
           </div>
         </div>
     </nav>
+    <div class="form_article-past">
+      <button class="form-toggler btn  btn-form-up" type="button" data-bs-toggle="collapse" data-bs-target="#formSupportedContent" aria-controls="formSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          Filter
+        </button>
+      <form class="form-control collapse" action="get" id="formSupportedContent">
+         
+      </form>
+  </div>
     <header class=" row header text-center">
             <h1>Upcoming Events</h1>
     </header>
     <main class="container">
-            <div class="form_article">
-                <button class="form-toggler btn  btn-form" type="button" data-bs-toggle="collapse" data-bs-target="#formSupportedContent" aria-controls="formSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    Filter
-                  </button>
-                <form class="form-control collapse" action="get" id="formSupportedContent">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Books" name="checkbooks" id="checkbooks">
-                        <label class="form-check-label" for="checkbooks">
-                          Books
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Cinema" name="checkcinema" id="checkcinema">
-                        <label class="form-check-label" for="checkcinema">
-                          Cinema
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Music Concerts" name="checkmusic" id="checkmusic">
-                        <label class="form-check-label" for="checkmusic">
-                            Music Concerts
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Food Fair" name="checkfood" id="checkfood">
-                        <label class="form-check-label" for="checkfood">
-                          Food Fair
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Costume Party" name="checkparty" id="checkparty">
-                        <label class="form-check-label" for="checkparty">
-                          Costume Party
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Marathon" name="checkmarathon" id="checkmarathon">
-                        <label class="form-check-label" for="checkmarathon">
-                          Marathon
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Museum" name="checkmuseum" id="checkmuseum">
-                        <label class="form-check-label" for="checkmuseum">
-                          Museum
-                        </label>
-                      </div>
-                       <div class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                       </div> 
-                </form>
-            </div>
 
-            <div class="form-expand container">
+            <div class="form-expand container form-past">
               <form class="form-control" action="get" >
-                    <div >
                        
-                    <div class="row">
+                    <div class="row" id="form-expand">
 
-                      <div class="col-4 col-md-2">
-                        <input class="form-check-input" type="checkbox" value="Books" name="checkbooks" id="checkbooks">
-                    <label class="form-check-label" for="checkbooks">
-                      Books
-                    </label>
-                      </div>
-
-                      <div class="col-3 col-md-2">
-                        <input class="form-check-input" type="checkbox" value="Cinema" name="checkcinema" id="checkcinema">
-                    <label class="form-check-label" for="checkcinema">
-                      Cinema
-                    </label>
-                      </div>
-
-                      <div class="col-5 col-md-3">
-                        <input class="form-check-input" type="checkbox" value="Music Concerts" name="checkmusic" id="checkmusic">
-                        <label class="form-check-label" for="checkmusic">
-                            Music Concerts
-                        </label>
-                      </div>
-
-                      <div class="col-4 col-md-2">
-                        <input class="form-check-input" type="checkbox" value="Food Fair" name="checkfood" id="checkfood">
-                    <label class="form-check-label" for="checkfood">
-                      Food Fair
-                    </label>
-                      </div>
-
-                      <div class="col-5 col-md-3">
-                        <input class="form-check-input" type="checkbox" value="Costume Party" name="checkparty" id="checkparty">
-                    <label class="form-check-label" for="checkparty">
-                      Costume Party
-                    </label>
-                      </div>
-
-                      <div class="col-4">
-                        <input class="form-check-input" type="checkbox" value="Marathon" name="checkmarathon" id="checkmarathon">
-                    <label class="form-check-label" for="checkmarathon">
-                      Marathon
-                    </label>
-                      </div>
-                      
-                      <div class="col-3">
-                        <input class="form-check-input" type="checkbox" value="Museum" name="checkmuseum" id="checkmuseum">
-                        <label class="form-check-label" for="checkmuseum">
-                          Museum
-                        </label>
-                      </div>
+                     
                    </div>  
-                    </div>
-                    
                   
-                   <div class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                   </div> 
             </form>
             </div>
 
@@ -178,12 +79,13 @@
             </div>
 
             <div class="cards-expand">
-            <div id="up_events" class="row"> 
+            <div id="up_events" class="row row-center">
+               
             </div>
             </div>
     </main>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid footer-gral">
       <div class="redes"> 
          <a href="#"><img src="/Recursos Amazing Events/facebook.png" alt="logo-facebook" width="30"></a>
          <a href="#"><img src="/Recursos Amazing Events/instagram.png" alt="logo-instagram" width="30"></a>
@@ -219,4 +121,5 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="/scripts/scriptUp.js"></script>
+<script src="/scripts/data.js"></script>
 </html>
