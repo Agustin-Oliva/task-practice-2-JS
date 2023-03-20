@@ -4,6 +4,8 @@ const collapseContainer = document.getElementById("formSupportedContent");
 const expandContainer = document.getElementById("form-expand");
 const currentDate = "2022-01-01"
 
+
+// Array de los eventos
     const events= [
         {
           _id: 1,
@@ -211,7 +213,7 @@ function insertUpCards(array){
               <p class="card-text">${array[i].description}</p>
               <div class="card-btn">
                 <span> $ ${array[i].price}</span>
-                <a href="#" class="btn btn-secondary">See More</a>
+                <a href="./data.html?id=${array[i]._id}" class="btn btn-secondary">See More</a>
               </div>
             </div>
           </div>
@@ -233,7 +235,7 @@ function insertUpCards(array){
       <p class="card-text">${array[x].description}</p>
       <div class="card-btn">
         <span>$ ${array[x].price}usd</span>
-        <a onclick="data" id="btnMore" href="data.html" class="btn">See More</a>
+        <a href="./data.html?id=${array[x]._id}" class="btn" id="btnMore">See More</a>
       </div>
     </div>
   </div>
@@ -250,7 +252,7 @@ function insertUpCards(array){
               <p class="card-text">${array[i].description}</p>
               <div class="card-btn">
                 <span>$ ${array[i].price}</span>
-                <a id="btnMore" href="data.html" class="btn">See More</a>
+                <a href="./data.html?id=${array[i]._id}" class="btn" id="btnMore">See More</a>
               </div>
             </div>
           </div>

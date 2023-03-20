@@ -99,11 +99,16 @@ body{
     font-size: 1.3em;
     font-weight: bold;
   }
+  .btn-form{
+    margin-left: 20px;
+  }
 .btn-form-past{
     margin-top: 10px;
+    margin-left: 20px;
 }
  .btn-form-up{
     margin-top: 10px;
+    margin-left: 20px;
 }
 /* Estilos para el carousel de cards de eventos */
 
@@ -210,7 +215,42 @@ form{
  .div-text ul{
     list-style: none;
  }
+/* Estilos para la card Data */
+.cont-data{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+.container-card{
+    width: 80%;
+    align-self: center;
+}
+.card-data{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin: auto auto;
+    height: 400px;
+}
+.cont-img{
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    margin: 0 10px;
+}
+.card-body{
+flex-shrink: 2;
+}
+.img-data{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
 
+.negrita{
+    font-weight: bold;
+}
  @media (min-width:320px){
     .btn-display{
       display: block;
@@ -238,6 +278,21 @@ form{
    
 }
 /* Media query para tablet Med*/
+@media (max-width:600px){
+    .container-card{
+        height: 500px;
+    }
+   .card-data{
+    flex-direction: column;
+    height: 500px;
+   }
+   .cont-img{
+    width: 80%;
+   }
+   .img-data{
+    margin: 10px 0;
+   }
+}
 @media (min-width:600px){
     .div-data{
         max-width: 940px;
@@ -280,8 +335,6 @@ form{
      }
 
 }
-
-
 
 @Media (min-width:768px){
     .nav-item:hover{

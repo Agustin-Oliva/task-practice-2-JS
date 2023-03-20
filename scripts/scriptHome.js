@@ -198,7 +198,7 @@ const eventNull = [{
                 <p class="card-text">${array[i].description}</p>
                 <div class="card-btn">
                   <span>$ ${array[i].price}usd</span>
-                  <a href="./data.html?id="${array[i]._id}" class="btn btn-secondary">See More</a>
+                  <a href="./data.html?id=${array[i]._id}" class="btn btn-secondary">See More</a>
                 </div>
               </div>
             </div>
@@ -222,7 +222,7 @@ function insertCarouselHomeCards(array){
       <p class="card-text">${array[x].description}</p>
       <div class="card-btn">
         <span>$ ${array[x].price}usd</span>
-        <a href="./data.html?id="${array[x]._id}" class="btn btn-secondary">See More</a>
+        <a href="./data.html?id=${array[x]._id}" class="btn btn-secondary">See More</a>
       </div>
     </div>
   </div>
@@ -239,7 +239,7 @@ function insertCarouselHomeCards(array){
                   <p class="card-text">${array[i].description}</p>
                   <div class="card-btn">
                     <span>$ ${array[i].price}</span>
-                    <a href="./data.html?id="${array[i]._id}" class="btn btn-secondary">See More</a>
+                    <a href="./data.html?id=${array[i]._id}" class="btn btn-secondary">See More</a>
                   </div>
                 </div>
               </div>
