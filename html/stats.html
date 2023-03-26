@@ -40,104 +40,72 @@
     <header class=" row header text-center">
             <h1>Stats</h1>
     </header>
-    <main class="container">
-      <div class="table-responsive">
+    <main class="container cont-table">
+      <div id="table-responsive" class="table-responsive">
+
         <table class="table">
 
           <thead class="table-tittle">
             <tr>
               <th colspan="3">Events statistics</th>
             </tr>
+            <tr>
+              <td class="td-one"><span class="bold-table">Events with highest percentage of attendance</span></td>
+              <td class="td-one"><span class="bold-table">Events with the lowest percentage of attendance</span></td>
+              <td class="td-one"><span class="bold-table">Event with larger capacity</span></td>
+            </tr>
           </thead>
   
-          <tbody>
-            <tr>
-              <td class="td-one">Events with highest percentage of attendance</td>
-              <td class="td-one">Events with the lowest percentage of attendance</td>
-              <td class="td-one">Event with larger capacity</td>
-            </tr>
-  
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-  
+          <tbody id="table-all">
+            
+          </tbody>
+        </table>
+        
+        <table id="table-Up" class="table">
+          <thead>
             <tr  class="table-tittle">
               <th colspan="3">Upcoming events statistics by category </th>
             </tr>
-  
             <tr>
-              <td>Categories</td>
-              <td>Revenues</td>
-              <td>Percentage of attendance</td>
+              <td><span class="bold-table">Categories</span></td>
+              <td><span class="bold-table">Revenues</span></td>
+              <td><span class="bold-table">Percentage of attendance</span></td>
             </tr>
+          </thead>
+
+          <tbody id="upcoming-body">
+           
   
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-  
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-  
-            <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            <tr class="table-tittle">
-              <th colspan="3">
-                Past Events statistics by category 
-              </th>
-            </tr>
-              <tr>
-                <td>Categories</td>
-                <td>Revenues</td>
-                <td>Percentage of attendance</td>
-              </tr>
-              <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              </tr>
-              <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              </tr>
-              <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              </tr>
-              <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              </tr>
-              <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              </tr>
-              <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              </tr>
           </tbody>
+          </table>
+
+          <table class="table">
+            <thead>
+              <tr class="table-tittle">
+                <th colspan="3">
+                  Past Events statistics by category 
+                </th>
+              </tr>
+              <tr>
+                <td><span class="bold-table">Categories</span></td>
+                <td><span class="bold-table">Revenues</span></td>
+                <td><span class="bold-table">Percentage of attendance</span></td>
+              </tr>
+            </thead>
+            <tbody id="past-body">
+             
+            </tbody>
+
+
          </table>
       </div>
        
     </main>
 
+   <!--  <div class="expand-table">
 
-
+    </div>
+ -->
 
     <footer class="container-fluid footer-gral">
         <div class="redes"> 
@@ -153,6 +121,8 @@
         </div>
       </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="/scripts/stats.js"></script>
 </html>

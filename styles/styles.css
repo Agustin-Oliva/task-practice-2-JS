@@ -1,9 +1,18 @@
 /* Estilos Generales */
-
+/* .expand-table{
+    height: 50px;
+} */
 body{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    height: 100% !important;
+}
+body main{
+    margin-bottom: 45px;
+}
+.cont-table{
+margin-bottom: 78px;
 }
 .logo{
     width: 150px;
@@ -60,7 +69,7 @@ body{
     height: 190px;
 }
 .card{
-    height: 382px;
+    height: 395px;
 }
 .card-body{
     display: flex;
@@ -168,6 +177,9 @@ form{
     height: 100px !important;
 }
  /* Estilo para la tabla */
+ .bold-table{
+    font-weight: bold;
+ }
  .table{
     min-width: 480px;
     width: 80%;
